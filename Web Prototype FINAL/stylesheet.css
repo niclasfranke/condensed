@@ -1,0 +1,772 @@
+/*info: h1:arial, */
+
+/*SKABELON, GRUND STRUKTUR*/
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+
+.box1 a:hover {
+    color: #00BDB0;
+}
+
+.box2 a:hover {
+    color: #00BDB0;
+}
+
+.box6 a:hover {
+    color: #00BDB0;
+}
+
+a:visited {
+    color: black;
+}
+
+body {
+    position: relative;
+    background-color: #EDEDED;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+.header_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+#burger {
+    flex-grow: 1;
+    flex-basis: auto;
+}
+
+#fronterhvervskeatitle {
+    flex-grow: 1;
+    flex-basis: auto;
+    font-family: arial;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-family: arial;
+    font-size: 0.5rem;
+}
+
+#log_out {
+    text-decoration: underline;
+    font-size: 1.2rem;
+    font-family: arial;
+}
+
+/*SKABELON SLUT*/
+
+/*FORSIDE*/
+
+/*profilbillede*/
+#forsidesection .person img {
+    position: absolute;
+    left: 4vw;
+    top: 1vw;
+    width: 11vw;
+    height: 11vw;
+    border-radius: 100%;
+}
+
+/*Newsfeed billede*/
+#forsidesection .buddybillede img {
+    max-width: 90vw;
+}
+
+#forsidesection .newsfeedbillede_2 img {
+    max-width: 90vw;
+}
+
+/*Bliv buddy på kea tekst*/
+#forsidesection .billede1 p {
+    position: absolute;
+    width: 50vw;
+    top: 48vw;
+    left: 5vw;
+    font-size: 4.5vw;
+    font-family: arial;
+    font-weight: 600;
+    color: #00BDBD;
+    z-index: 1;
+}
+
+/*Læs mere box*/
+#forsidesection .lillebox {
+    position: relative;
+    top: 39vw;
+    left: 68vw;
+    width: 15vw;
+    height: 8vw;
+    background-color: #00BDBD;
+    z-index: 1;
+}
+
+#forsidesection .mere p {
+    text-align: center;
+    font-family: arial;
+    font-size: 3vw;
+    color: #ffffff;
+    position: absolute;
+    left: -17.5vw;
+    top: -1vw;
+    font-weight: 100;
+
+}
+
+#newsfeedslide {
+    overflow: auto;
+    display: flex;
+    position: relative;
+    top: -10vw;
+
+}
+
+/*Flexer ikonerne*/
+#forsidesection .menubox {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    position: relative;
+    top: -24vw;
+}
+
+/*Ikoner placering+farve+størrelse*/
+#forsidesection .box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    position: relative;
+    top: 0vw;
+    width: 45vw;
+    height: 30vw;
+    background-color: #FFFFFF;
+    margin: 3vw;
+}
+
+/*ikon skema*/
+#forsidesection .box1 img {
+    position: absolute;
+    height: 15vw;
+    width: 15vw;
+    left: 14vw;
+    top: 10vw;
+}
+
+/*ikon afleveringer*/
+#forsidesection .box2 img {
+    position: absolute;
+    height: 15vw;
+    width: 15vw;
+    left: 15vw;
+    top: 11vw;
+}
+
+/*ikon praktisk info*/
+#forsidesection .box3 img {
+    position: absolute;
+    height: 15vw;
+    width: 15vw;
+    left: 15vw;
+    top: 10vw;
+}
+
+/*ikon materialer*/
+#forsidesection .box4 img {
+    position: absolute;
+    height: 15vw;
+    width: 15vw;
+    left: 15vw;
+    top: 11vw;
+}
+
+/*ikon semester*/
+#forsidesection .box5 img {
+    position: absolute;
+    height: 15vw;
+    width: 15vw;
+    left: 15vw;
+    top: 10vw;
+}
+
+/*ikon lektier*/
+#forsidesection .box6 img {
+    position: absolute;
+    height: 15vw;
+    width: 15vw;
+    left: 15vw;
+    top: 10vw;
+}
+
+/*ikon overskrifter*/
+#menu p {
+    text-align: center;
+    margin: 2vw;
+    font-size: 4.5vw;
+    font-family: arial;
+    font-weight: 600;
+}
+
+#forsidesection footer {
+    margin-top: -15vw;
+}
+
+/*FORSIDE SLUT*/
+
+/*SKEMA*/
+
+
+#skema .container_top {
+    display: flex;
+    justify-content: space-between;
+    margin: 10vw;
+}
+
+#skema .arrow {
+    background-image: url(billeder/arrow.svg);
+    background-repeat: no-repeat;
+    height: 6vw;
+    width: 4vw;
+
+}
+
+#skema .tidspunkt {
+    font-family: arial;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+#skema .arrow2 {
+    background-image: url(billeder/arrow.svg);
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    height: 6vw;
+    width: 4vw;
+
+}
+
+#skema .kolonne {
+    border: 1px solid white;
+    margin: 2vw;
+    padding: 1vw;
+
+    background-color: #fffefe;
+}
+
+#skema .kolonne_bottom1 {
+    border: 1px solid #EA5045;
+    margin: 2vw;
+    padding: 2vw;
+
+    background-color: #EA5045;
+    text-align: center;
+    position: relative;
+}
+
+#skema .kolonne_bottom2 {
+    border: 1px solid #ea847c;
+    margin: 2vw;
+    padding: 2vw;
+
+    background-color: #EA847C;
+    text-align: center;
+    position: relative;
+}
+
+#skema .container_top {
+    display: flex;
+    flex-grow: grow;
+}
+
+#skema .container_bottom {
+    flex-basis: 1;
+
+}
+
+#skema .pil {
+    position: absolute;
+    right: 3vw;
+    top: 5vw;
+}
+
+/*SKEMA SLUT*/
+
+
+/*AFLEVERING OVERSIGT*/
+
+#afleveringer .kolonne {
+    border: 1px solid white;
+    margin: 2vw;
+    background-color: #fffefe;
+}
+
+#afleveringer .tema {
+    font-family: arial;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+#afleveringer .arrow_down {
+    background-image: url(billeder/arrow.svg);
+    background-repeat: no-repeat;
+    height: 6vw;
+    width: 4vw;
+    transform: rotate(90deg);
+}
+
+#afleveringer p {
+    font-family: arial;
+    font-size: 1.1rem;
+    padding: 0 0 0 0.5rem;
+}
+
+#afleveringer .kolonne1 {
+    background-color: #EA5045;
+    font-weight: bold;
+    position: relative;
+
+}
+
+#afleveringer .kolonne2,
+#afleveringer .kolonne3,
+#afleveringer .kolonne4,
+#afleveringer .kolonne5,
+#afleveringer .kolonne6,
+#afleveringer .kolonne7,
+#afleveringer .kolonne8 {
+    position: relative;
+}
+
+#afleveringer .pil {
+    position: absolute;
+    top: 9vw;
+    ;
+    right: 3vw;
+    ;
+}
+
+
+/*AFLEVERING BESKRIVELSE*/
+
+/*jeg var nødt til at kalde til img elementet, ellers kunne jeg ikke gøre den mindre. Hvorfor? ved jeg ikke :-)*/
+#afleveringer_beskrivelse .chain_ikon img {
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    left: 78vw;
+    top: 6vw;
+
+}
+
+#afleveringer_beskrivelse .pil_beskrivelse {
+    position: absolute;
+    top: 5vw;
+    right: 3vw;
+}
+
+#afleveringer_beskrivelse .kolonne5_2 {
+    height: 50vw;
+}
+
+#afleveringer_beskrivelse .statistik_ikon {
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    left: 78vw;
+    top: 5vw;
+}
+
+#afleveringer_beskrivelse .kolonne {
+    border: 1px solid white;
+    margin: 2vw;
+    background-color: #fffefe;
+}
+
+#afleveringer_beskrivelse .tema {
+    font-family: arial;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+#afleveringer_beskrivelse .arrow_down {
+    background-image: url(billeder/arrow.svg);
+    background-repeat: no-repeat;
+    height: 6vw;
+    width: 4vw;
+    transform: rotate(90deg);
+}
+
+#afleveringer_beskrivelse p {
+    font-family: arial;
+    font-size: 1.1rem;
+    padding: 0 0 0 0.5rem;
+}
+
+#afleveringer_beskrivelse .kolonne1 {
+    background-color: #EA5045;
+    font-weight: bold;
+    position: relative;
+
+}
+
+#afleveringer_beskrivelse .kolonne2,
+#afleveringer_beskrivelse .kolonne3,
+#afleveringer_beskrivelse .kolonne4,
+#afleveringer_beskrivelse .kolonne5,
+#afleveringer_beskrivelse .kolonne6,
+#afleveringer_beskrivelse .kolonne7,
+#afleveringer_beskrivelse .kolonne8 {
+    position: relative;
+}
+
+/*Lektier Beskrivelser*/
+
+#lektier_beskrivelse .tema {
+    font-family: arial;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+#lektier_beskrivelse .kolonnestor {
+    border: 1px solid white;
+    margin: 2vw;
+    padding: 2vw;
+
+    background-color: #fffefe;
+}
+
+#lektier_beskrivelse .kolonne_top {
+    border: 1px solid white;
+    margin: 2vw;
+    padding: 2vw;
+
+    background-color: #EA5045;
+}
+
+#lektier_beskrivelse .kolonne_litt {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#lektier_beskrivelse .ikon_litteraturliste {
+    height: 2vw;
+    width: 2vw;
+    background-color: #fffefe;
+
+
+}
+
+#lektier_beskrivelse .kolonne_billede {
+    border: 1px solid white;
+    margin: 2vw;
+    padding: 2vw;
+
+}
+
+#lektier_beskrivelse .litterertur {
+    border: 1px solid white;
+    margin: 2vw;
+    padding: 2vw;
+
+    height: 30px;
+    width: 30px;
+
+
+}
+
+#lektier_beskrivelse .kolonne_liste {
+    border: 1px solid white;
+    margin: 2vw;
+    padding: 2vw;
+
+    background-color: #fffefe;
+    display: flex;
+    justify-content: space-between
+}
+
+#lektier_beskrivelse .arrow3 {
+    background-image: url(billeder/arrow.svg);
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+    height: 6vw;
+    width: 6vw;
+
+
+}
+
+#lektier_beskrivelse .luksuspil {
+
+    border: 1px solid white;
+    margin: 1.3vw;
+
+
+    height: 25px;
+    width: 50px;
+
+}
+
+.arrow_reverse {
+    transform: rotate(180deg);
+
+}
+
+/* Lektier oversigt */
+
+#lektier .kolonne {
+    border: 1px solid white;
+    margin: 2vw;
+    background-color: #fffefe;
+}
+
+#lektier_beskrivelse {
+    font-family: arial;
+}
+
+#lektier .tema {
+    font-family: arial;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+#lektier .arrow_down {
+    background-image: url(billeder/arrow.svg);
+    background-repeat: no-repeat;
+    height: 6vw;
+    width: 4vw;
+    transform: rotate(90deg);
+}
+
+#lektier p {
+    font-family: arial;
+    font-size: 1.1rem;
+    padding: 0 0 0 0.5rem;
+}
+
+#lektier .kolonne1 {
+    background-color: #EA5045;
+    font-weight: bold;
+    position: relative;
+
+}
+
+#lektier .kolonne2,
+#lektier .kolonne3,
+#lektier .kolonne4,
+#lektier .kolonne5,
+#lektier .kolonne6,
+#lektier .kolonne7,
+#lektier .kolonne8 {
+    position: relative;
+}
+
+#lektier .pil {
+    position: absolute;
+    top: 9vw;
+    ;
+    right: 3vw;
+    ;
+}
+
+#lektier .kolonne_billede {
+    border: 1px solid white;
+    margin: 2vw;
+    padding: 2vw;
+
+}
+
+#lektier .litterertur {
+    border: 1px solid white;
+    margin: 2vw;
+    padding: 2vw;
+
+    height: 30px;
+    width: 30px;
+
+
+}
+
+#lektier .kolonne_liste {
+    border: 1px solid white;
+    margin: 2vw;
+    padding: 2vw;
+
+    background-color: #fffefe;
+    display: flex;
+    justify-content: space-between
+}
+
+/*Lektier Beskrivelser slut*/
+
+/*Grid container*/
+#navigation body {
+    margin: 0;
+    padding: 0;
+}
+
+#login body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px;
+    justify-items: center;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+/*KEA LOGO*/
+.keaikon {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    margin: 9.5vw 0vw 14vw 0vw;
+}
+
+
+/*Login side*/
+.loginform {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+
+
+.glemtpassword {
+    grid-row-start: 4;
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+
+/*Login side grid*/
+.formgroup {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+}
+
+.formgroup label {
+    grid-column-start: 1;
+}
+
+.formgroup input {
+    grid-column-start: 2;
+}
+
+.formgroup,
+.glemtpassword {
+    margin-bottom: 1.5rem;
+}
+
+
+
+/*Login input*/
+input[type=password],
+input[type=text] {
+    padding: 1rem;
+}
+
+
+input[type=submit] {
+    background-repeat: no-repeat;
+    background-image: url(ui/loginpil.svg);
+    background-size: 100%;
+    border: none;
+    background-color: var(--color-accent1);
+    margin: 0vw 23.3vw;
+}
+
+
+/*-------------------Login page-------------------*/
+
+#login .unilogin {
+    background-color: #ededed;
+    margin: 0vw 0vw 7vw 0vw;
+    text-align: center;
+    padding: 1vw;
+    font-family: arial;
+    font-weight: bold;
+}
+
+
+
+#login {
+    background-color: #00BDBD;
+    min-height: 100vh;
+}
+
+
+#login .glemtpassword a {
+    text-decoration: none;
+    color: black;
+    font-family: arial;
+
+}
+
+#login .glemtpassword {
+    text-align: center;
+}
+
+
+/*-------------------Nav Menu-------------------*/
+
+
+/*Navigation menu "grid"*/
+#navigation .menu {
+    padding: 0.1vw;
+    text-align: center;
+}
+
+
+#navigation footer {
+    margin-top: 25vw;
+}
+
+#navigation {
+
+    background-color: #EDEDED;
+    font-family: arial;
+    font-weight: bolder;
+    font-size: 1rem;
+    text-align: center;
+    min-height: 100vh;
+}
+
+
+#navigation a {
+    text-decoration: none;
+    color: black;
+}
+
+#navigation a:hover {
+
+    color: #00BDBD;
+}
+
+#navigation .luk {
+    height: 10vw;
+    width: 9vw;
+    font-family: arial;
+    font-size: 2.5rem;
+
+
+}
+
+
+/*-------------------Forside-------------------*/
